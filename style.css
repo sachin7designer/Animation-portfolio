@@ -1,31 +1,12 @@
 body {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
-  /* Extended multi-color gradient */
-  background: linear-gradient(
-    135deg,
-    #0a0a0f 0%,    /* Deep near-black */
-    #15101c 10%,   /* Midnight purple */
-    #2a1430 20%,   /* Dark plum */
-    #3a1a2e 30%,   /* Burgundy purple */
-    #4a1f24 40%,   /* Maroon */
-    #5a1f2a 50%,   /* Sunset red */
-    #7a2f2f 60%,   /* Burnt orange */
-    #a33f3f 70%,   /* Dark crimson */
-    #7a2f2f 80%,   /* Back to orange-red */
-    #3a1a2e 90%,   /* Fade to burgundy */
-    #0a0a0f 100%   /* End deep black */
-  );
-
-  background-attachment: fixed; /* Makes it feel infinite */
-  background-size: 300% 300%;   /* Big, sweeping effect */
-
-  color: #f8f8f8; /* Soft white text */
-  min-height: 100vh; /* Full screen */
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: rgb(248, 248, 248);
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(36, 36, 73) 50%, rgb(0, 0, 0) 100%) 0% 0% / cover fixed;
 }
 	.container {
 		font-family: Arial, Helvetica, sans-serif;
@@ -207,14 +188,15 @@ body {
 
 }
 .about-section h1{
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-weight: 900;
 	font-size: 100px;
 	max-width: 1150px;
 	text-align: center;
 	margin: 25px 0;
 	text-transform: uppercase;
-	background: linear-gradient(to right,  #2d0a0a, #6a1f0f, #a8400f, #d98c3a, #f2b94f, #fcd77f, #f2b94f, #d98c3a, #a8400f, #2a2345, #0a0a1a);
+	background: linear-gradient(to right, rgb(245, 245, 245), rgb(209, 209, 209), rgb(255, 114, 114), rgb(215, 121, 99), rgb(168, 64, 15), rgb(217, 140, 58), rgb(242, 185, 79), rgb(129, 252, 127), rgb(242, 185, 79), rgb(217, 140, 58), rgb(26, 191, 217), rgb(254, 144, 119), rgb(235, 129, 129), rgb(209, 209, 209), rgb(245, 245, 245)) 0% 0% / 200% text;
+    animation: 2.5s linear 0s infinite normal none running animate-gradient;
 	background-size: 200%;
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -246,8 +228,9 @@ body {
 .about-section p {
 	font-size: 30px;
 	font-weight: 400;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	background: linear-gradient(to left, #2d0a0a, #6a1f0f, #a8400f, #d98c3a, #f2b94f, #fcd77f, #f2b94f, #d98c3a, #a8400f, #2a2345, #0a0a1a);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background: linear-gradient(to right, rgb(245, 245, 245), rgb(209, 209, 209), rgb(255, 114, 114), rgb(215, 121, 99), rgb(168, 64, 15), rgb(217, 140, 58), rgb(242, 185, 79), rgb(129, 252, 127), rgb(242, 185, 79), rgb(217, 140, 58), rgb(26, 191, 217), rgb(254, 144, 119), rgb(235, 129, 129), rgb(209, 209, 209), rgb(245, 245, 245)) 0% 0% / 200% text;
+    animation: 2.5s linear 0s infinite normal none running animate-gradient;
 	background-size: 200%;
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -305,9 +288,11 @@ body {
 	top: 10px;
 	left: 5%;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 60px;
+	font-size: 50px;
+	text-shadow: 2px 5px 2px #0f1217;
 	z-index: 1;
-		background: linear-gradient(to right, #2d0a0a, #6a1f0f, #a8400f, #d98c3a, #f2b94f, #fcd77f, #f2b94f, #d98c3a, #a8400f, #2a2345, #0a0a1a  );
+		background: linear-gradient(to right, rgb(245, 245, 245), rgb(209, 209, 209), rgb(255, 114, 114), rgb(215, 121, 99), rgb(168, 64, 15), rgb(217, 140, 58), rgb(242, 185, 79), rgb(129, 252, 127), rgb(242, 185, 79), rgb(217, 140, 58), rgb(26, 191, 217), rgb(254, 144, 119), rgb(235, 129, 129), rgb(209, 209, 209), rgb(245, 245, 245)) 0% 0% / 200% text;
+    animation: 2.5s linear 0s infinite normal none running animate-gradient;;
 	background-size: 200%;
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -322,7 +307,8 @@ body {
 	left: 5%;
 	z-index: 1;
 	max-width: 250px;
-	color: lightgray;
+	color: white;
+	text-shadow: 1px #edff66;
 }
 .card video {
 	width: 100%;
@@ -410,7 +396,8 @@ body {
 	font-size: 70px;
 	max-width: 550px;
 	text-align: center;
-	background: linear-gradient(to right,  #2d0a0a, #6a1f0f, #a8400f, #d98c3a, #f2b94f, #fcd77f, #f2b94f, #d98c3a, #a8400f, #2a2345, #0a0a1a);
+	background:linear-gradient(to right, rgb(245, 245, 245), rgb(209, 209, 209), rgb(255, 114, 114), rgb(215, 121, 99), rgb(168, 64, 15), rgb(217, 140, 58), rgb(242, 185, 79), rgb(129, 252, 127), rgb(242, 185, 79), rgb(217, 140, 58), rgb(26, 191, 217), rgb(254, 144, 119), rgb(235, 129, 129), rgb(209, 209, 209), rgb(245, 245, 245)) 0% 0% / 200% text;
+    animation: 2.5s linear 0s infinite normal none running animate-gradient;;
 	background-size: 200%;
 	background-clip: text;
 	-webkit-background-clip: text;
